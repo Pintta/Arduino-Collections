@@ -1,2 +1,2 @@
 # Arduino-Collections
-I uploaded my Arduino code sruff all in here :)
+I uploaded my Arduino code stuff all in here :)
