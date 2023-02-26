@@ -1,7 +1,6 @@
 // MODE
 int fadeAmount = 3;  // How many checkpoints for fade, this 3 is perfect default, but if you want use 5 :)
 int k = 0; // Don't touch them
-int xaxa = digitalRead(xac); // Don't touch them
 // PIN
 int xac = 13; // ACTIVATED SENSOR // PIN 13
 int xp = 7; // Red (R) // PIN 7
@@ -24,7 +23,7 @@ void loop() {
     fadeAmount = -fadeAmount;
   }
   delay(100); // DELAY MEAN TIME MS, DEFAULT 100MS = 0,1 SECONDS
-  if (xaxa == 1) {// If you have sensor, this activated
+  if (digitalRead(xac) == 1) {// If you have sensor, this activated
     analogWrite(xp, HIGH); // Activated sensor
   }
   else { // Not resposive sensor
